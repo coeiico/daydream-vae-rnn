@@ -123,6 +123,12 @@ remove an item that is done.
   into the data Volume, then train the VAE, the MDN-RNN and the CMA-ES controller in order, on
   an A10 or A100.
 
+## Local Runs
+
+- Start every local training run, sweep or long analysis in tmux with `just bg <recipe> [args]`,
+  for example `just bg train --run-name wd1.0-seed0`. `tmux ls` lists the sessions and
+  `tmux attach -t <session>` watches one; each session's output is also in `runs/logs/`.
+
 ## Project Overview
 
 daydream-vae-rnn is project 17 of 18 in the Latent Space Project: small ML repos that test whether
