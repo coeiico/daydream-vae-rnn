@@ -2,11 +2,7 @@
 
 **World Models.** A VAE + MDN-RNN world model with a controller trained entirely inside its own dream.
 
-Part of the **Latent Space Project**: 18 small PyTorch repos that test one idea, that neural networks encode concepts and strategy in their latent space, and that we can read and edit those representations. Everything trains on a single consumer GPU or a laptop.
-
-| Roadmap | Phase | Depends on | Status |
-| --- | --- | --- | --- |
-| 17 of 18 | 5. Representation and generation | VAE code from knobs-vae | Not started (scaffolded) |
+**Status:** not started.
 
 ## Question
 
@@ -27,7 +23,7 @@ Can an agent learn a compressed model of its world and learn to act inside its o
 
 - The dream-trained controller beats random play in the real environment, with a short dream video in the README.
 
-Plus the definition of done every Latent Space Project repo shares:
+Plus the general checklist:
 
 Apply this checklist with the project-specific requirements and exceptions in
 [CLAUDE.md](CLAUDE.md#project-specific-scope).
@@ -40,7 +36,7 @@ Apply this checklist with the project-specific requirements and exceptions in
 
 ## Notes
 
-- The most compute-heavy project, so it sits late in the roadmap.
+- The most compute-heavy of these projects.
 - CarRacing needs gymnasium's Box2D extra (`uv add "gymnasium[box2d]"`); add it only when moving to that environment.
 
 ## Quickstart
